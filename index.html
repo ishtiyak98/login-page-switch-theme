@@ -10,27 +10,29 @@
 <body>
     <div class="container">
         <div class="title">
-            <h2>Login</h2>
+            <h2 id="titleText">Login</h2>
         </div>
         <div class="form-wrapper">
             <form>
-                <input type="email" placeholder="Email" name="" id="">
-                <input type="password" placeholder="Password" name="" id="">
-                <input type="submit" value="Login">
+                <input type="email" placeholder="Email" name="" id="email">
+                <input type="password" placeholder="Password" name="" id="password">
+                <input id="btn" type="submit" value="Login">
             </form>
         </div>
         <div class="footer-group">
-            <p><a href="#">Forget Password?</a></p>
-            <p><a href="#">Signup</a></p>
+            <p><a id="forgotPass" href="#">Forget Password?</a></p>
+            <p><a id="signup" href="#">Signup</a></p>
         </div>
     </div>
     
     <div class="colors">
-        <span class="active" style="--clr: #1dd1a1;"></span>
-        <span style="--clr: #ff6b6b;"></span>
-        <span style="--clr: #2e86de;"></span>
-        <span style="--clr: #f368e0;"></span>
-        <span style="--clr: #ff9f43;"></span>
+        <span style="--clr: #1dd1a1;" onclick="changeColor('#1dd1a1')"></span>
+        <span style="--clr: #ff6b6b;" onclick="changeColor('#ff6b6b')"></span>
+        <span style="--clr: #2e86de;" onclick="changeColor('#2e86de')"></span>
+        <span style="--clr: #f368e0;" onclick="changeColor('#f368e0')"></span>
+        <span style="--clr: #ff9f43;" onclick="changeColor('#ff9f43')"></span>
+        <span style="--clr: #333;" onclick="changeColor('#333')"></span>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
